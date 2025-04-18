@@ -1,0 +1,163 @@
+<DOCTYPE html>
+<html>
+<title>Membership</title>
+<head>
+
+<link rel = "stylesheet" type = "text/css" href = "style.css"/>
+
+<style>
+	p.italic {
+  font-style: italic;  
+}
+
+</style>
+</head>
+
+
+<center><img src = " pics/Club.png" height = "250" width = "250" /></center>
+
+<body style = "background-image:url('pics/background.png');background-attachment:fixed;background-size : 100% 100%;">
+																			<!-- NAVIGATION BAR LINKS-->
+<div class="topnav">
+<style>
+  body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+  <a href="home.html">Home</a>
+  <a href="prices.html">Prices</a>
+  <a href="food.html">Food</a>
+  <a href = "hours.html"> Hours </a>
+  <a class = "active" href="membership.html">Membership</a>
+
+</div>
+																		<!-- END OF NAVIGATION BAR LINKS --> 
+
+<script>
+
+function ValidationForm()
+{
+    if (document.forms["myForm"]["first"].value == null || document.forms["myForm"]["first"].value == "" )
+     {
+        alert("You need to provide A First Name.");
+        return false;
+     }
+    else
+     {
+       alert("Answer Accepted");
+     }
+
+     if (document.forms["myForm"]["last"].value == null || document.forms["myForm"]["last"].value == "" )
+     {
+        alert("You need to provide A Last Name.");
+        return false;
+     }
+    else
+     {
+       alert("Answer Accepted");
+     }
+
+     if (document.forms["myForm"]["e-mail"].value == null || document.forms["myForm"]["e-mail"].value == "" )
+     {
+        alert("You need to provide an E-mail");
+        return false;
+     }
+    else
+     {
+       alert("Answer Accepted");
+     }
+}
+</script>
+</br>
+<center><h1> Membership Details</h1></center>
+</br>
+
+<center><table border = "2" style = "width:50%">
+
+  <tr>
+    <th> Standard: $15</th>
+    <th> Core: $20 </th>
+    <th> Premium: $30 </th>
+  </tr>
+  
+  <tr>
+    <td> 
+        <p> - 10% Off all of our Food and Beverages (Excluding Alcohol).</p>
+        <p> - Can bring up to 6 people before hitting the extra charge fee per table.</p>
+    </td>
+
+    <td> 
+        <p> - Enjoy 15% off all Food and Beverages at our location (Excluding Alcohol).</p> 
+        <p> - Accessories 15% off.</p>
+        <p> - $10 Per Table per hour with up to 6 people before hitting the extra charge fee!</p>
+        <p> - Able to call our location to reserve a table in advance to beat the line! </p>
+    </td>
+    <td> 
+        <p> - 20% all Food and Beverages</p>
+        <p> - 15% Off Accessories</p>
+        <p> - 10% Alcoholic Beverages</p>
+        <p> - $10 Per Table per hour with up to 6 people before hitting the extra charge fee!</p>
+    </td>
+  </tr>  
+
+</table></center>
+</br>
+</br>
+</br>
+</br>
+
+
+<center><h4> Join The Gang Today!</h4></center> 
+                                                                                  <!-- MEMBERSHIP FORM -->
+
+
+<center><form name = "myForm"  onsubmit = "return ValidationForm()" >
+
+First Name:<input type ="text" maxlength = "16" size = "16"  name  = "first"/> </br></br>
+Last Name:<input type = "text" name = "last"/></br></br>
+
+
+E-mail:<input type="text" name ="e-mail"/>
+</br></br>
+
+
+
+Please Choose Type of Membership: </br>
+<input type = "radio" name = "membership" value = "standard"/> Standard</br>
+<input type = "radio" name = "membership" value = "core"/> Core</br>
+<input type = "radio" name = "membership" value = "premium"/> Premium</br>
+
+</br>
+
+What Days of The Week Are You Planning to Attend? </br>
+<input type = "checkbox" name = " Monday"/> Monday</br>
+<input type = "checkbox" name = " Tuesday"/> Tuesday</br>
+<input type = "checkbox" name = " Wedsenday"/> Wednesday</br>
+<input type = "checkbox" name = " Thursday"/>Thursday</br>
+<input type = "checkbox" name = " Friday"/> Friday</br>
+<input type = "checkbox" name = "Saturday"/> Saturday</br>
+<input type = "checkbox" name = " Sunday"/> Sunday</br>
+
+</br>
+</br>
+
+<input type= "submit"  value = "Click to submit"/>
+
+</form></center>
+                                                                                      <!--END OF FORM -->
+
+</br>
+</br>
+</br>
+</br>
+<center><h3>Contact Us</h3>
+<a href="mailto:CCornercompany@gmail.com">E-Mail</a></br></br>
+<a href = " https://www.google.com/maps/place/New+York+City+College+of+Technology/@40.694729,-73.9882886,17z/data=!3m1!5s0x89c25a359132a721:0xc5bf5b14929d136f!4m6!3m5!1s0x89c25a4a6c47643b:0x284552dca0b97d69!8m2!3d40.6954272!4d-73.9875062!16zL20vMDJuY2s5">Check our Location Here</a>
+<h5><p class="italic"> 300 Jay St, Brooklyn, NY 11201</p></h5>
+<h5><p class="italic">(347)777-7777</p></h5></center>
+
+<center><h6><p class="italic"> All Memberships are Monthly and require a form of payment of Debit/Credit Card ONLY. NO CASH. A State ID and Email is required in order to receive updates and exclusive promotions that will be going on at The Cue Corner for its members. For Premium Membership: All Alcoholic Beverages being discounted will be allowed if over the age of 21 years old. Please allow up to 3 business days for transaction to be processed fully and stated on you bank account. All refunds must be made within the first week of your new cycle. Any damaged equipment will be charged if fully responsible. We reserve the right to grant no access to anyone at anytime to our location. For any additional questions please call (347)777-7777 or email us at CCornercompany@gmail.com.</p></h6></center>
+</body>		
+
+</html>
